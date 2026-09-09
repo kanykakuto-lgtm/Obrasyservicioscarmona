@@ -1,0 +1,959 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed-variant": "#43474f", "outline": "#76777c", "on-secondary-fixed-variant": "#7e2c08", "primary-container": "#1e2229", "on-primary-container": "#868992", "on-error": "#ffffff", "outline-variant": "#c6c6cb", "surface-container-lowest": "#ffffff", "surface-container-low": "#eff4ff", "surface-container-highest": "#dbe3f1", "on-tertiary": "#ffffff", "on-primary-fixed": "#181c23", "on-surface-variant": "#45474b", "primary-fixed": "#dfe2ec", "error": "#ba1a1a", "primary-fixed-dim": "#c3c6d0", "inverse-surface": "#29313c", "on-secondary-fixed": "#380d00", "surface": "#f8f9ff", "primary": "#080c12", "surface-tint": "#5b5e67", "on-background": "#141c26", "background": "#f8f9ff", "secondary-fixed": "#ffdbcf", "secondary": "#9d431f", "on-secondary": "#ffffff", "on-tertiary-fixed-variant": "#7c2e05", "surface-bright": "#f8f9ff", "surface-dim": "#d3dae9", "inverse-primary": "#c3c6d0", "on-error-container": "#93000a", "inverse-on-surface": "#eaf1ff", "tertiary": "#1c0500", "secondary-container": "#fe8c62", "tertiary-fixed-dim": "#ffb598", "surface-container": "#e7eefd", "error-container": "#ffdad6", "surface-container-high": "#e1e9f7", "on-secondary-container": "#742502", "tertiary-fixed": "#ffdbce", "on-tertiary-fixed": "#370e00", "on-tertiary-container": "#d16e42", "surface-variant": "#dbe3f1", "on-primary": "#ffffff", "tertiary-container": "#411300", "secondary-fixed-dim": "#ffb59b", "on-surface": "#141c26" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-3xl": "4.5rem", "space-xl": "2rem", "space-2xl": "3rem", "space-sm": "0.75rem", "space-lg": "1.5rem", "space-xs": "0.5rem", "gutter-desktop": "2rem", "space-2xs": "0.25rem", "gutter-mobile": "1rem", "container-max": "1240px", "gutter-tablet": "1.5rem", "space-md": "1rem", "space-4xl": "6rem" }, "fontFamily": { "display-hero-mobile": [ "Manrope" ], "body-lg": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "headline-lg": [ "Manrope" ], "headline-md": [ "Manrope" ], "label-caps": [ "Plus Jakarta Sans" ], "body-md": [ "Plus Jakarta Sans" ], "headline-sm": [ "Manrope" ], "label-ui": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Manrope" ], "display-hero": [ "Manrope" ] }, "fontSize": { "display-hero-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "body-sm": [ "14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "600" } ], "headline-md": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "label-caps": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "700" } ], "body-md": [ "16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-ui": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1240px] mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm shrink-0"><img alt="Logo Obras y Servicios Alfonso Carmona" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WAUy6S3T5Gn1D1FXd6HjhJj6aew8-dDod4sPD9jm8jwnu9-Z1nZwBZ2S2i8i17c9QPEi6_2cVrEZ_ymiLDTXxLWIAJaGQaPnQWmlc0C5A9m8VBjdLBLV3G_vN2xNEo37NAPIIjxLzmRCG1qn0zOeWFebyU-e6LgaYcHH6g58B8ro9-ZalJGkOW7NiXZh4aDFbikhAd0v-so6w2iVe3m3lFswDeYT-s_1T4e81C4oE90tRU0Fl4hi3mPe8"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">Alfonso Carmona</span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest mt-1 hidden sm:inline-block">Obras &amp; Reformas · Toledo &amp; Madrid</span></div></div><nav class="hidden xl:flex items-center gap-space-md" data-active-classes="bg-surface-container-high text-primary font-bold rounded-lg"><a class="font-label-ui text-label-ui text-on-surface-variant hover:text-on-surface px-space-xs py-space-2xs transition-colors" data-path="servicios" href="#servicios">Servicios</a><a class="font-label-ui text-label-ui text-on-surface-variant hover:text-on-surface px-space-xs py-space-2xs transition-colors" data-path="galeria" href="#galeria">Galería</a><a class="font-label-ui text-label-ui text-on-surface-variant hover:text-on-surface px-space-xs py-space-2xs transition-colors" data-path="sobre-nosotros" href="#sobre-nosotros">Sobre nosotros</a><a class="font-label-ui text-label-ui text-on-surface-variant hover:text-on-surface px-space-xs py-space-2xs transition-colors" data-path="opiniones" href="#opiniones">Opiniones</a><a class="font-label-ui text-label-ui text-on-surface-variant hover:text-on-surface px-space-xs py-space-2xs transition-colors" data-path="contacto" href="#contacto">Contacto</a></nav><div class="flex items-center gap-space-md shrink-0"><a class="hidden lg:flex items-center gap-space-xs text-on-surface-variant hover:text-primary transition-colors group" href="tel:+34925531284"><span class="material-symbols-outlined text-secondary text-[20px] transition-transform group-hover:scale-110">phone_in_talk</span><div class="flex flex-col text-left"><span class="font-label-ui text-label-ui text-primary leading-tight font-semibold">+34 925 53 12 84</span><span class="font-label-caps text-[10px] text-on-surface-variant tracking-wider uppercase">Atención Directa</span></div></a><a class="inline-flex items-center justify-center bg-secondary text-on-secondary px-space-md py-space-xs rounded-lg font-label-ui text-label-ui tracking-wide shadow-[0_2px_8px_rgba(157,67,31,0.25)] hover:bg-secondary-container hover:text-on-secondary-container transition-all" href="#presupuesto"><span class="material-symbols-outlined text-[18px] mr-space-2xs hidden sm:inline">calculate</span>Pide tu presupuesto</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- 2. HERO SECTION -->
+<section class="relative w-full -mt-20 overflow-hidden bg-primary text-on-primary">
+<!-- Background Image with Scrim -->
+<div class="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-1000 scale-105" data-alt="Modern architectural open-plan living room and minimalist kitchen with exposed natural wood ceiling beams, warm limestone floors, terracotta-toned kitchen island with brass fixture, neutral linen sofa, and large Crittall black steel French doors framing a sunlit Spanish Mediterranean patio courtyard with olive tree and pool, captured in warm daylight." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCpc8OKCI_SnVGo4Flu9838RHjFCKeu0UToNwXFolg1ucq49OIeRF9RvuT4FS-lfFLL_ZlgNvb5bMoBuOvNkNoeTCT3mBTMyLMob0UiIU3mezluHsSl0ZGlW-eEL7qm5NirZOZk8B4115ZuVt1OL4I49V45fob6fVHZIMYHdY0tEBeoZ--qYslWjApF0N0hRZ7DkO3Jdv01JHWpkLyXGNCIzbh6tRSnfs77bjOlcJVb3dRCIAbI07G4Uw')"></div>
+<!-- Layered Architectural Dark Gradients for Crisp Readability -->
+<div class="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-primary/40"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-primary/40"></div>
+<div class="relative max-w-[1240px] mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop pt-40 pb-space-3xl lg:pt-48 lg:pb- space-4xl flex flex-col items-start">
+<!-- Top Badge -->
+<div class="inline-flex items-center gap-space-xs px-space-sm py-space-2xs rounded-full bg-surface-container-lowest/10 backdrop-blur-md mb-space-lg shadow-sm">
+<span class="text-secondary text-xs">★</span>
+<span class="font-label-caps text-label-caps tracking-widest text-secondary-fixed uppercase">Constructores e Interioristas en Toledo y Madrid Sur</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-display-hero text-display-hero text-on-primary max-w-4xl tracking-tight mb-space-lg">
+        Reformamos tu hogar con la garantía de <span class="text-secondary-container">30 años</span> de experiencia.
+      </h1>
+<!-- Explanatory Subtitle -->
+<p class="font-body-lg text-body-lg text-surface-container-highest max-w-2xl mb-space-xl leading-relaxed">
+        Especialistas en reformas integrales de viviendas, obra nueva, cocinas de diseño y baños en el Norte de Toledo y Sur de Madrid. Compromiso riguroso en plazos, calidad material y presupuesto cerrado.
+      </p>
+<!-- CTA Action Group -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md w-full sm:w-auto mb-space-xl">
+<a class="inline-flex items-center justify-center gap-space-xs bg-secondary text-on-secondary px-space-xl py-space-md rounded-lg font-label-ui text-label-ui shadow-xl hover:bg-secondary-container hover:text-on-secondary-container transition-all transform hover:-translate-y-0.5 active:translate-y-0" href="#presupuesto">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+          Solicita presupuesto gratis
+        </a>
+<a class="inline-flex items-center justify-center gap-space-xs bg-surface-container-lowest/15 backdrop-blur-md text-on-primary hover:bg-surface-container-lowest/25 px-space-xl py-space-md rounded-lg font-label-ui text-label-ui transition-all" href="#galeria">
+<span class="material-symbols-outlined text-[20px]">roofing</span>
+          Ver proyectos
+        </a>
+</div>
+<!-- Micro Credential -->
+<div class="flex items-center gap-space-sm text-surface-dim font-body-sm text-body-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+<span class="">Respuesta en menos de 24h</span>
+<span class="text-outline-variant">•</span>
+<span class="material-symbols-outlined text-secondary-container text-sm">verified</span>
+<span class="">Visita técnica inicial sin coste</span>
+</div>
+</div>
+</section>
+<!-- 3. BARRA DE CONFIANZA (METRICS STRIP) -->
+<section class="w-full bg-surface-container-lowest shadow-sm py-space-xl relative z-10">
+<div class="max-w-[1240px] mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-space-lg md:gap-space-xl">
+<!-- Metric 1 -->
+<div class="flex items-center gap-space-md p-space-sm rounded-xl bg-surface transition-transform hover:-translate-y-1">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed/50 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[28px]">history_edu</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-primary tracking-tight font-bold">+30 años</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Experiencia ininterrumpida desde 1995</p>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="flex items-center gap-space-md p-space-sm rounded-xl bg-surface transition-transform hover:-translate-y-1">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed/50 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[28px]">home_work</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-primary tracking-tight font-bold">+300</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Proyectos y obras finalizadas con éxito</p>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="flex items-center gap-space-md p-space-sm rounded-xl bg-surface transition-transform hover:-translate-y-1">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed/50 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[28px]">near_me</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">Toledo y Sur Madrid</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Yuncos, Illescas, Getafe, Parla...</p>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="flex items-center gap-space-md p-space-sm rounded-xl bg-surface transition-transform hover:-translate-y-1">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed/50 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[28px]">handshake</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-secondary tracking-tight font-bold">100%</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Presupuesto cerrado sin sorpresas</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. SERVICIOS -->
+<section class="w-full py-space-4xl bg-surface" id="servicios">
+<div class="max-w-[1240px] mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-space-md">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block mb-space-2xs">NUESTROS SERVICIOS</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Soluciones constructivas a medida</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Desde reformas integrales de alto standing hasta rehabilitaciones técnicas completas, cuidamos cada encuentro arquitectónico y milímetro de material.
+        </p>
+</div>
+<!-- 5 Services Cards Grid (Asymmetric Mosaic) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-xl">
+<!-- Service 1: Reformas Integrales (Col Span 2 on large screens) -->
+<div class="group relative rounded-xl bg-surface-container-lowest p-space-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden lg:col-span-2">
+<div class="relative z-10">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-secondary mb-space-lg group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[28px]">architecture</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Servicio Integral</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-space-2xs mb-space-xs font-semibold">Reformas Integrales</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg mb-space-lg">
+              Renovación total llave en mano de pisos, unifamiliares y chalets. Gestión íntegra de licencias municipales, demoliciones seguras, redistribución de tabiquería y carpintería artesanal.
+            </p>
+</div>
+<div class="relative z-10 flex items-center justify-between pt-space-md mt-space-md">
+<span class="font-label-ui text-label-ui text-secondary flex items-center gap-space-2xs group-hover:gap-space-xs transition-all">
+              Ver detalles de reforma <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Llave en Mano</span>
+</div>
+<div class="absolute right-0 bottom-0 w-1/3 h-full opacity-10 group-hover:opacity-20 transition-opacity bg-cover bg-center pointer-events-none hidden sm:block" data-alt="Interior architectural blueprint and bright minimalist living room with warm wood textures and microcement walls." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC7X7sNkR-Ji6uek-lzHTJX4v5J91map6YgaQxu4X0KopwnT_2_bdR2XGnn8JGnczr36_8yGHZwPjjj8HcRAxipij6fkWdduV8I3rFBGko2KSTizJ2rh_am8XP8Z1JYeVAhKO1oUpXxq4jF0YDgqIVqnEa5N5cgCJ7CrALfXuBfssV7g5LXFxljx8nSnQ4uOw3585kFKO72JO271mPLrerHSV_KgUmfsErAtMVUDdZq_XsfqiLLR4ImVA')"></div>
+</div>
+<!-- Service 2: Obra Nueva -->
+<div class="group rounded-xl bg-surface-container-lowest p-space-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-secondary mb-space-lg group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[28px]">foundation</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Construcción</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mt-space-2xs mb-space-xs font-semibold">Obra Nueva</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Edificación desde cimientos, diseño bioclimático, estructuras de hormigón y acero, y máxima eficiencia energética clase A con aerotermia y suelo radiante.
+            </p>
+</div>
+<a class="font-label-ui text-label-ui text-secondary flex items-center gap-space-2xs group-hover:gap-space-xs transition-all" href="#presupuesto">
+            Consultar edificación <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Service 3: Cocinas de Diseño -->
+<div class="group rounded-xl bg-surface-container-lowest p-space-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-secondary mb-space-lg group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[28px]">countertops</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Espacios Clave</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mt-space-2xs mb-space-xs font-semibold">Reformas de Cocinas</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Cocinas abiertas concebidas como el corazón del hogar. Islas esculturales en porcelánico o cuarzo, mobiliario a medida de roble natural y extracción perimetral invisible.
+            </p>
+</div>
+<a class="font-label-ui text-label-ui text-secondary flex items-center gap-space-2xs group-hover:gap-space-xs transition-all" href="#presupuesto">
+            Diseñar mi cocina <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Service 4: Baños de Vanguardia -->
+<div class="group rounded-xl bg-surface-container-lowest p-space-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-secondary mb-space-lg group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[28px]">shower</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Bienestar</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mt-space-2xs mb-space-xs font-semibold">Reformas de Baños</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Sustitución de bañera por platos de resina a ras de suelo, griferías empotradas en negro mate o bronce, hornacinas retroiluminadas y revestimientos continuos en microcemento.
+            </p>
+</div>
+<a class="font-label-ui text-label-ui text-secondary flex items-center gap-space-2xs group-hover:gap-space-xs transition-all" href="#presupuesto">
+            Renovar baño <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Service 5: Comunidades y Fachadas -->
+<div class="group rounded-xl bg-surface-container-lowest p-space-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-secondary mb-space-lg group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[28px]">apartment</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Edificación Colectiva</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mt-space-2xs mb-space-xs font-semibold">Reformas en Comunidades</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Rehabilitación térmica de fachadas mediante sistema SATE, impermeabilización de cubiertas, bajantes, rampas de accesibilidad universal y modernización de portales vecinales.
+            </p>
+</div>
+<a class="font-label-ui text-label-ui text-secondary flex items-center gap-space-2xs group-hover:gap-space-xs transition-all" href="#presupuesto">
+            Presupuesto comunitario <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. CÓMO TRABAJAMOS -->
+<section class="w-full py-space-4xl bg-surface-container-low relative">
+<div class="max-w-[1240px] mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop">
+<!-- Section Header -->
+<div class="text-center max-w-2xl mx-auto mb-space-3xl">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block mb-space-2xs">METODOLOGÍA DE CONFIANZA</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Un proceso transparente de principio a fin</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+          Eliminamos la incertidumbre de las reformas con un protocolo exhaustivo de hitos, informes técnicos y supervisión constante.
+        </p>
+</div>
+<!-- 4 Steps Flow -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg relative">
+<!-- Step 1 -->
+<div class="p-space-xl rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+<div>
+<div class="font-display-hero-mobile text-display-hero-mobile text-secondary-container/40 font-bold mb-space-sm group-hover:text-secondary transition-colors">01</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs font-semibold">Contacto y visita</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Evaluamos tu vivienda in situ en Yuncos, Toledo o Madrid sin ningún coste. Tomamos cotas exactas, analizamos instalaciones y escuchamos tus deseos.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-xs flex items-center gap-space-2xs text-secondary font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-sm">schedule</span> Cita en 24/48h
+          </div>
+</div>
+<!-- Step 2 -->
+<div class="p-space-xl rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+<div>
+<div class="font-display-hero-mobile text-display-hero-mobile text-secondary-container/40 font-bold mb-space-sm group-hover:text-secondary transition-colors">02</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs font-semibold">Presupuesto detallado</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Memoria de calidades pormenorizada por partidas desglosadas, precio cerrado garantizado y plazos estipulados bajo contrato vinculante.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-xs flex items-center gap-space-2xs text-secondary font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-sm">gavel</span> Sin sobrecostes
+          </div>
+</div>
+<!-- Step 3 -->
+<div class="p-space-xl rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+<div>
+<div class="font-display-hero-mobile text-display-hero-mobile text-secondary-container/40 font-bold mb-space-sm group-hover:text-secondary transition-colors">03</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs font-semibold">Ejecución de la obra</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Dirección técnica continua a pie de obra, operarios especializados de plantilla y comunicación semanal fotográfica del avance.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-xs flex items-center gap-space-2xs text-secondary font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-sm">engineering</span> Jefe de obra asignado
+          </div>
+</div>
+<!-- Step 4 -->
+<div class="p-space-xl rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+<div>
+<div class="font-display-hero-mobile text-display-hero-mobile text-secondary-container/40 font-bold mb-space-sm group-hover:text-secondary transition-colors">04</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs font-semibold">Entrega y garantía</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Limpieza profesional de fin de obra, entrega formal de llaves con acta de conformidad y certificado de garantía extendida de hasta 10 años.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-xs flex items-center gap-space-2xs text-secondary font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-sm">verified_user</span> Hasta 10 años garantía
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. GALERÍA DE PROYECTOS & ANTES/DESPUÉS -->
+<section class="w-full py-space-4xl bg-surface" id="galeria">
+<div class="max-w-[1240px] mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-md">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block mb-space-2xs">PORTFOLIO DE EXCELENCIA</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Proyectos que inspiran hogares</h2>
+</div>
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+          Fotografías reales de reformas en Toledo y Madrid Sur
+        </div>
+</div>
+<!-- Filter Tabs -->
+<div class="flex flex-wrap items-center gap-space-xs mb-space-2xl" id="gallery-filters">
+<button class="gallery-tab active px-space-md py-space-xs rounded-lg font-label-ui text-label-ui bg-primary text-on-primary shadow-sm transition-all" data-filter="all">Todas</button>
+<button class="gallery-tab px-space-md py-space-xs rounded-lg font-label-ui text-label-ui bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-all" data-filter="cocinas">Cocinas</button>
+<button class="gallery-tab px-space-md py-space-xs rounded-lg font-label-ui text-label-ui bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-all" data-filter="banos">Baños</button>
+<button class="gallery-tab px-space-md py-space-xs rounded-lg font-label-ui text-label-ui bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-all" data-filter="integrales">Reformas Integrales</button>
+<button class="gallery-tab px-space-md py-space-xs rounded-lg font-label-ui text-label-ui bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-all" data-filter="comunidades">Comunidades</button>
+<button class="gallery-tab px-space-md py-space-xs rounded-lg font-label-ui text-label-ui bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-all" data-filter="nueva">Obra Nueva</button>
+</div>
+<!-- Projects Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-xl" id="gallery-container">
+<!-- Card 1: Before/After Interactive Kitchen -->
+<div class="project-card group rounded-xl bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-xl transition-all" data-category="cocinas integrales">
+<div class="relative w-full h-72 overflow-hidden before-after-container cursor-ew-resize select-none">
+<!-- After Image -->
+<img class="w-full h-full object-cover" data-alt="Completed contemporary kitchen remodel in a Toledo villa with custom oak wood cabinetry, warm terracotta tile island, brushed brass taps, and concealed warm under-cabinet LED lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBE5pFTecFYPBWNTTvkdlvbins0BelKp8FTE5VnVKsiCdis2Bon1e-es7YcYd6d198SjhGujDKA5k23J2hfmGqZecIhqLdsViVyzNSJ79l1vASR4QQbjjoDOegpVnoUiF4bRgVT-7fyNpl8ORQdXZgbONh19jxbW747pw4PUFm0jwDrDPx0rGkautTLxhSTeT7sEGG7ZPkMzZxzsuoyPr6DXVWBvY-OeTk1HG39thBgfuEMdv4se2ixNw">
+<!-- Before Image Overlay with slider clip -->
+<div class="before-overlay absolute inset-0 w-1/2 overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover max-w-none" data-alt="Dark outdated kitchen prior to renovation, with cluttered 1980s dark brown melamine cabinets, worn tiled countertops, and dim yellow fluorescent tube lights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwhk5DhWDKG6U_B_Db4NA4WHul-f4sejO617RrnR3qL1xt-gsVZ49ikaSAH0Y0NwDq5fmI_ifS-rtOZ7fdKIeEDza35EdNMraw89J2J22rnS8pWpdyo8XNgqDgMYMYJhRhLruREl_SebEvoIFnK99uv5qAeEd03d33KTNsCZ7EW5UDVg99tUJnd5ol4hBLsezH5TbVM6s0w6Rb3JfYiYMam95zmN9REWeHyWMkgrhBDAW58c-m7zVNgQ" style="width: 200%;">
+<span class="absolute top-space-sm left-space-sm bg-primary/80 backdrop-blur-md text-on-primary text-xs font-label-caps px-space-xs py-space-2xs rounded">ANTES</span>
+</div>
+<span class="absolute top-space-sm right-space-sm bg-secondary text-on-secondary text-xs font-label-caps px-space-xs py-space-2xs rounded">DESPUÉS</span>
+<!-- Hairline divider handle -->
+<div class="divider-handle absolute top-0 bottom-0 left-1/2 w-1 bg-surface-container-lowest shadow-lg flex items-center justify-center -ml-0.5 pointer-events-none">
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-md text-xs">↔</div>
+</div>
+</div>
+<div class="p-space-lg">
+<div class="flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps mb-space-2xs">
+<span class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[16px] text-secondary">location_on</span> Illescas (Toledo)</span>
+<span class="">Plazo: 5 semanas</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold mb-space-xs">Reforma Integral de Cocina y Comedor</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Ampliación espacial eliminando tabiquería, isla en cuarzo y mobiliario en roble natural alistonado. Desliza sobre la imagen para ver el cambio.
+            </p>
+</div>
+</div>
+<!-- Card 2: Luxury Bathroom (Baños) -->
+<div class="project-card group rounded-xl bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-xl transition-all" data-category="banos integrales">
+<div class="relative w-full h-72 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Luxury bathroom with warm greige microcement walls, walk-in zero-barrier shower with frameless glass panel, freestanding solid surface oval bathtub, and wall-mounted brushed bronze basin taps." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5Iv6TEim478OTzrwahssgx5xNrwkEIFtMQNVdHAmmYsBtpT6z0NUJ5m4BD2mk8GCjZsfp8ljfaLdqvAGc1AQC6QLcqbDKwz6D6ymD_PNIjjQ9yT35zGebFHU9IiIpy0lJiYRawUwtpSB4Y5JgM29TkALGAkonwEsxv5fahs7c5uplOwy-NUuHDKGo9O9s8lLiypnE2BE8DYsndEbm5QmBpowqqGXTO6JHfJTb7tfNKoRu5JshJn97ig">
+<span class="absolute bottom-space-sm left-space-sm bg-primary/85 backdrop-blur-md text-on-primary text-xs font-label-caps px-space-sm py-space-2xs rounded">BAÑO PRINCIPAL</span>
+</div>
+<div class="p-space-lg">
+<div class="flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps mb-space-2xs">
+<span class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[16px] text-secondary">location_on</span> Yuncos (Toledo)</span>
+<span class="">Plazo: 2 semanas</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold mb-space-xs">Suite con Ducha a Ras y Microcemento</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Transformación total de un baño oscuro en un santuario tipo spa con hornacina iluminada, grifería empotrada y mampara fija perfil negro.
+            </p>
+</div>
+</div>
+<!-- Card 3: Villa con Porche y Piscina (Obra Nueva / Integrales) -->
+<div class="project-card group rounded-xl bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-xl transition-all" data-category="integrales nueva">
+<div class="relative w-full h-72 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Single-story architectural Spanish villa with sand-colored mortar facade, Mediterranean patio with rectangular swimming pool with turquoise water, olive trees, and shaded wooden pergola in Toledo." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC03TN5cJ1hfN2fc1qzBgAs1CPzstEchTbTBPeYdFSHbBeCBE39u54ElFBELE0JK2ueMpykyDkIei2u-9RPWpD0YZO063gu3BrHVZyRbA4Dgmf96ix2v_4jJ8q-prSX1AOgEY70PKEqGAucuAE7kzCy-xv0au4nKVIiTXQgxtU_yTv-OILO-FchvFZqQJnXPDfOuReFgHm1SvxQXsYAP_2w_gbZPGCBdsLNGv0-PeRFiwyC1YQCnn8zFA">
+<span class="absolute bottom-space-sm left-space-sm bg-primary/85 backdrop-blur-md text-on-primary text-xs font-label-caps px-space-sm py-space-2xs rounded">VIVIENDA UNIFAMILIAR</span>
+</div>
+<div class="p-space-lg">
+<div class="flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps mb-space-2xs">
+<span class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[16px] text-secondary">location_on</span> Parla (Madrid Sur)</span>
+<span class="">Plazo: 7 meses</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold mb-space-xs">Chalet Unifamiliar con Exterior Integrado</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Construcción completa desde cimientos, certificación energética clase A y diseño continuo entre salón interior y porche apergolado.
+            </p>
+</div>
+</div>
+<!-- Card 4: Fachada SATE y Cubierta (Comunidades) -->
+<div class="project-card group rounded-xl bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-xl transition-all" data-category="comunidades">
+<div class="relative w-full h-72 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Rehabilitated residential apartment building facade in Madrid with crisp white and warm terracotta exterior thermal insulation system SATE panels, new balconies, and contemporary architectural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY_ExeFRcjF_KJnal7eVr1Kum4ykds_3VonYbZcz-nJD91-wO-0bqnyIYf21q4eMYM-vV9IK1hAlKuSthkob97Lptc70HLTIUPu_CPiPsNAnVio79QSXS6u5-o4wUppjErZ3C6elTaSTEraD5GEzvyFMrtKutX-7mm6S76WFe-fk-Jk3k7i_2EqgVEeXyRx9_J_rRzDFvrc_Ui64SWuHEEUXv8Pkdwlx7TNaiadAqrL0Jw1PXy_Aje6Q">
+<span class="absolute bottom-space-sm left-space-sm bg-primary/85 backdrop-blur-md text-on-primary text-xs font-label-caps px-space-sm py-space-2xs rounded">COMUNIDAD</span>
+</div>
+<div class="p-space-lg">
+<div class="flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps mb-space-2xs">
+<span class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[16px] text-secondary">location_on</span> Getafe (Madrid Sur)</span>
+<span class="">Plazo: 3 meses</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold mb-space-xs">Rehabilitación Térmica SATE de Fachada</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Reducción del 55% en la demanda energética comunitaria, eliminación de puentes térmicos y modernización estética del inmueble.
+            </p>
+</div>
+</div>
+<!-- Card 5: Reforma Integral Piso (Integrales) -->
+<div class="project-card group rounded-xl bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-xl transition-all" data-category="integrales">
+<div class="relative w-full h-72 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Spacious renovated open-plan penthouse apartment living room with pale herringbone parquet floors, minimalist wall moldings, large black aluminum balcony windows, and designer soft furniture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr6b-bMaQhTyVr8Lqh-m-29cg09C9bny4jZHvje0UKLNtyIiORzWhadzX8lU6GICgGwObq3TS9d7QiRaTZGhKNB44qhLBZfNartUEEfQ889pQPRW1_v7XDlxJiSJ46KSVQEk0_w0Omg9rKZG45fyT6YXrKBp4WRI_wBpl9_zugw9sbGVzU44fMecPYi70FSulVv-LrUunMTnAaRYJl5-D6eZWf1EMjMy1hF5k5o-YxtKqP8wjm1J-VKg">
+<span class="absolute bottom-space-sm left-space-sm bg-primary/85 backdrop-blur-md text-on-primary text-xs font-label-caps px-space-sm py-space-2xs rounded">PISO ÁTICO</span>
+</div>
+<div class="p-space-lg">
+<div class="flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps mb-space-2xs">
+<span class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[16px] text-secondary">location_on</span> Seseña (Toledo)</span>
+<span class="">Plazo: 8 semanas</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold mb-space-xs">Reforma Integral de Ático de 140m²</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Redistribución en concepto abierto, suelo radiante refrescante, aislamiento acústico y carpintería oculta de suelo a techo.
+            </p>
+</div>
+</div>
+<!-- Card 6: Cocina Madera & Piedra (Cocinas) -->
+<div class="project-card group rounded-xl bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-xl transition-all" data-category="cocinas">
+<div class="relative w-full h-72 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close-up detail of architectural kitchen island made of solid fluted oak wood and vein-cut travertine stone countertop, with integrated induction cooktop and minimalist wooden stools." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLM-2diH2a85rWwoiaOv3VADc64c_rWWZMCEt8rkHJfhmHMa-Tvu2-C_XHVZwr3fSRxmnsV2mCdDcKDdZCFqqSliJHFNfqtLw4iMjr44A18B4O8zgkTpb3KnYQREpHVmBEcbkUWF0nsEl1oCjHnVAaVCNhoPl25bi8MAmOmzmxYDcARjjCofBT4lA0SabCqwN11z5hW3LVGExehMqTtf8ufxNmir-w8CzcuCAkPZlCPjXmnGMJTm3h1g">
+<span class="absolute bottom-space-sm left-space-sm bg-primary/85 backdrop-blur-md text-on-primary text-xs font-label-caps px-space-sm py-space-2xs rounded">DETALLE MATERIAL</span>
+</div>
+<div class="p-space-lg">
+<div class="flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps mb-space-2xs">
+<span class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[16px] text-secondary">location_on</span> Valdemoro (Madrid)</span>
+<span class="">Plazo: 4 semanas</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold mb-space-xs">Cocina Alistonada con Isla Travertino</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Artesanía y tecnología con campana de integración total, enchufes ocultos escamoteables y vitrina retroiluminada de cristal ahumado.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. TESTIMONIOS DE CLIENTES -->
+<section class="w-full py-space-4xl bg-surface-container-low" id="opiniones">
+<div class="max-w-[1240px] mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop">
+<div class="text-center max-w-2xl mx-auto mb-space-3xl">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block mb-space-2xs">OPINIONES VERIFICADAS</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Lo que dicen quienes ya confían en nosotros</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+          La satisfacción de nuestros clientes se basa en tres pilares innegociables: cumplimiento de fechas, limpieza diaria y presupuesto inalterable.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-xl">
+<!-- Testimonial 1 -->
+<div class="p-space-xl rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center gap-space-2xs text-[#E69138] mb-space-md">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-space-lg">
+              "Contactamos con Alfonso para una reforma integral en Illescas y la experiencia ha sido impecable. Terminaron tres días antes del plazo fijado y no hubo ni un euro de desviación respecto al presupuesto. Trato sumamente educado y limpieza diaria en portal y vivienda."
+            </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-md">
+<div class="w-11 h-11 rounded-full bg-secondary-fixed text-secondary font-headline-sm text-headline-sm font-bold flex items-center justify-center">
+              RM
+            </div>
+<div>
+<div class="font-headline-sm text-headline-sm text-primary font-semibold text-base">Roberto Morales</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Reforma integral en Illescas</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="p-space-xl rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center gap-space-2xs text-[#E69138] mb-space-md">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-space-lg">
+              "Nos diseñaron una cocina con isla abierta y dos baños en Yuncos. El nivel de detalle en los encuentros de azulejos y la carpintería es de estudio de arquitectura de lujo, pero con precios honestos de contratista directo. Da gusto encontrar profesionales tan serios."
+            </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-md">
+<div class="w-11 h-11 rounded-full bg-secondary-fixed text-secondary font-headline-sm text-headline-sm font-bold flex items-center justify-center">
+              CG
+            </div>
+<div>
+<div class="font-headline-sm text-headline-sm text-primary font-semibold text-base">Carmen Gómez</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Cocina y baños en Yuncos</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="p-space-xl rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center gap-space-2xs text-[#E69138] mb-space-md">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-space-lg">
+              "Como presidente de comunidad en Parla contratamos la rehabilitación de fachada y aislamiento térmico. Nos gestionaron todas las subvenciones de eficiencia energética y los plazos se cumplieron al dedillo. Muy recomendables para comunidades exigentes."
+            </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-md">
+<div class="w-11 h-11 rounded-full bg-secondary-fixed text-secondary font-headline-sm text-headline-sm font-bold flex items-center justify-center">
+              JS
+            </div>
+<div>
+<div class="font-headline-sm text-headline-sm text-primary font-semibold text-base">Javier Salcedo</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Comunidad de Propietarios en Parla</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. SOBRE NOSOTROS -->
+<section class="w-full py-space-4xl bg-surface" id="sobre-nosotros">
+<div class="max-w-[1240px] mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+<!-- Left Image Composition with Floating Badge -->
+<div class="lg:col-span-5 relative">
+<div class="rounded-xl overflow-hidden shadow-xl aspect-[4/5] relative">
+<img class="w-full h-full object-cover" data-alt="Professional Spanish master builder and architect reviewing architectural plans on a wooden table inside an illuminated luxury home renovation site in Toledo with exposed wooden ceiling beams and natural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlMCNBckuZd63vpbecff50KKZN4O0AZT-L6yHrnY6dREdNkviT3YUms4dHt3CB9CDSgKAyQfh3EYGNBAg6MCDNLCpM9RFY3c3fV9pakxH3uMUjUaDOXLNCpaz1xDCv3V9hbMgMqUotrWmsYeIkqMQwpo_QtWnG_Enw6nRs2dXxd6OHPWu6pJv5EGRy2_RPCglAlsiHANYxrClHAMGVTorhd7lhRFhSw04RX4F8rFhHMEIlcM1ZTNpE1A">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+</div>
+<!-- Floating Badge -->
+<div class="absolute -bottom-6 -right-4 sm:right-6 bg-surface-container-lowest p-space-md rounded-xl shadow-xl flex items-center gap-space-sm max-w-xs">
+<div class="w-12 h-12 rounded-lg bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">verified</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-primary font-bold block leading-tight">Desde 1995</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Empresa familiar de trato cercano y directo</span>
+</div>
+</div>
+</div>
+<!-- Right Content Column -->
+<div class="lg:col-span-7 space-y-space-md lg:pl-space-xl">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block">HISTORIA Y COMPROMISO</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+            Casi tres décadas transformando espacios en Toledo y Madrid Sur
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Fundada en <strong>Yuncos (Toledo)</strong> a mediados de los años noventa, <strong>Obras y Servicios Alfonso Carmona</strong> nació con una vocación clara: desterrar la informalidad del sector de la construcción ofreciendo máxima solvencia técnica, seriedad contractual y vocación de servicio artesanal.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            A lo largo de 30 años ininterrumpidos de actividad, hemos fusionado la robustez de los maestros de obra tradicionales con las técnicas contemporáneas de interiorismo y bioarquitectura. Hablas directamente con Alfonso y su equipo técnico propio; sin comerciales intermedios ni subcontratas anónimas.
+          </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-sm">
+<div class="p-space-md rounded-lg bg-surface-container flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px] shrink-0">group</span>
+<div>
+<h4 class="font-label-ui text-label-ui text-primary font-bold">Personal propio cualificado</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Albañiles, fontaneros y electricistas homologados en nómina.</p>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px] shrink-0">workspace_premium</span>
+<div>
+<h4 class="font-label-ui text-label-ui text-primary font-bold">Garantía post-venta real</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Asistencia y resolución inmediata incluso años después de la entrega.</p>
+</div>
+</div>
+</div>
+<div class="pt-space-sm">
+<a class="inline-flex items-center gap-space-xs font-label-ui text-label-ui text-primary hover:text-secondary transition-colors font-semibold" href="#contacto">
+              Conoce nuestras oficinas en Yuncos <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. PREGUNTAS FRECUENTES (FAQ) -->
+<section class="w-full py-space-4xl bg-surface-container-low">
+<div class="max-w-[860px] mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop">
+<div class="text-center mb-space-3xl">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block mb-space-2xs">RESOLVEMOS TUS DUDAS</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Preguntas frecuentes</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+          Toda la claridad necesaria antes de iniciar las obras de tu hogar.
+        </p>
+</div>
+<!-- Accordion Container -->
+<div class="space-y-space-sm" id="faq-accordion">
+<!-- FAQ 1 -->
+<div class="faq-item rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden transition-all">
+<button class="faq-toggle w-full p-space-lg flex items-center justify-between text-left font-headline-sm text-headline-sm text-primary font-semibold focus:outline-none">
+<span class="">¿Cómo se calcula el precio y cuándo se entrega el presupuesto?</span>
+<span class="material-symbols-outlined faq-icon text-secondary transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-lg pb-space-lg text-on-surface-variant font-body-md text-body-md leading-relaxed">
+            Realizamos una visita técnica gratuita a tu vivienda o local para tomar mediciones precisas e inspeccionar el estado de las instalaciones. En un plazo de 48 a 72 horas laborales te entregamos una memoria técnica pormenorizada, partida por partida (demolición, fontanería, electricidad, albañilería, acabados) a precio cerrado sin sorpresas.
+          </div>
+</div>
+<!-- FAQ 2 -->
+<div class="faq-item rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden transition-all">
+<button class="faq-toggle w-full p-space-lg flex items-center justify-between text-left font-headline-sm text-headline-sm text-primary font-semibold focus:outline-none">
+<span class="">¿Cuáles son los plazos habituales de ejecución de una reforma?</span>
+<span class="material-symbols-outlined faq-icon text-secondary transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-lg pb-space-lg text-on-surface-variant font-body-md text-body-md leading-relaxed">
+            Los plazos varían según la envergadura del proyecto: una reforma de baño suele completarse en 7 a 10 días laborables; una reforma de cocina en 3 a 4 semanas; y una reforma integral completa de vivienda de 80-120m² ronda entre 6 y 10 semanas. Todos los tiempos se reflejan por contrato con cláusula de penalización diaria por retraso imputable a la constructora.
+          </div>
+</div>
+<!-- FAQ 3 -->
+<div class="faq-item rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden transition-all">
+<button class="faq-toggle w-full p-space-lg flex items-center justify-between text-left font-headline-sm text-headline-sm text-primary font-semibold focus:outline-none">
+<span class="">¿Cuál es vuestro radio exacto de actuación?</span>
+<span class="material-symbols-outlined faq-icon text-secondary transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-lg pb-space-lg text-on-surface-variant font-body-md text-body-md leading-relaxed">
+            Nuestra base operativa se sitúa en Yuncos (Toledo). Atendemos con flota propia toda la comarca de La Sagra (Illescas, Yuncos, Seseña, Ugena, Numancia de la Sagra, Esquivias), Toledo capital y alrededores, y toda la corona Sur de Madrid (Getafe, Leganés, Parla, Pinto, Fuenlabrada, Valdemoro, Arroyomolinos y Alcorcón).
+          </div>
+</div>
+<!-- FAQ 4 -->
+<div class="faq-item rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden transition-all">
+<button class="faq-toggle w-full p-space-lg flex items-center justify-between text-left font-headline-sm text-headline-sm text-primary font-semibold focus:outline-none">
+<span class="">¿Incluís servicio de diseño de interiores e infografías 3D?</span>
+<span class="material-symbols-outlined faq-icon text-secondary transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-lg pb-space-lg text-on-surface-variant font-body-md text-body-md leading-relaxed">
+            Sí. En nuestros proyectos integrales aportamos asesoramiento de interiorismo para la elección de tonalidades, distribución lumínica, cerámicas y maderas. Además, generamos renders e infografías fotorrealistas en 3D para que puedas previsualizar los espacios antes de colocar el primer ladrillo.
+          </div>
+</div>
+<!-- FAQ 5 -->
+<div class="faq-item rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden transition-all">
+<button class="faq-toggle w-full p-space-lg flex items-center justify-between text-left font-headline-sm text-headline-sm text-primary font-semibold focus:outline-none">
+<span class="">¿Qué garantías ofrecéis sobre los trabajos realizados?</span>
+<span class="material-symbols-outlined faq-icon text-secondary transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-lg pb-space-lg text-on-surface-variant font-body-md text-body-md leading-relaxed">
+            Ofrecemos garantía certificada por escrito conforme a la Ley de Ordenación de la Edificación (LOE): 1 año en acabados e instalaciones auxiliares, 3 años en elementos constructivos e impermeabilizaciones, y hasta 10 años en elementos estructurales y de cimentación para obra nueva. Contamos con seguro de responsabilidad civil de cobertura completa.
+          </div>
+</div>
+<!-- FAQ 6 -->
+<div class="faq-item rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden transition-all">
+<button class="faq-toggle w-full p-space-lg flex items-center justify-between text-left font-headline-sm text-headline-sm text-primary font-semibold focus:outline-none">
+<span class="">¿Cuáles son las formas y plazos de pago?</span>
+<span class="material-symbols-outlined faq-icon text-secondary transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-lg pb-space-lg text-on-surface-variant font-body-md text-body-md leading-relaxed">
+            No solicitamos importes desproporcionados por adelantado. El plan de pagos se fracciona mediante certificaciones parciales de obra ejecutada y validada: una señal inicial para acopio de materiales, pagos quincenales según hitos comprobados y una retención final que solo se abona tras la firma del acta de conformidad y entrega de llaves.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- 10. FORMULARIO DE PRESUPUESTO (#presupuesto) -->
+<section class="w-full py-space-4xl bg-surface" id="presupuesto">
+<div class="max-w-[1240px] mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop">
+<div class="rounded-2xl bg-surface-container-lowest shadow-xl overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12">
+<!-- Columna Izquierda: Formulario -->
+<div class="lg:col-span-7 p-space-xl md:p-space-2xl">
+<div class="mb-space-lg">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block mb-space-2xs">PRESUPUESTO CERRADO Y GRATUITO</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Cuéntanos tu idea</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs">
+                Rellena este formulario y nos pondremos en contacto contigo en menos de 24 horas laborables para agendar tu visita técnica.
+              </p>
+</div>
+<form class="space-y-space-md" id="quote-form" onsubmit="event.preventDefault(); alert('¡Gracias! Hemos recibido tu solicitud. Nos pondremos en contacto contigo en menos de 24 horas.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Nombre -->
+<div>
+<label class="block font-label-ui text-label-ui text-primary mb-space-2xs">Nombre completo *</label>
+<input class="w-full h-11 px-space-sm rounded-lg bg-surface text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary transition-all" placeholder="Ej. Juan Pérez" required="" type="text">
+</div>
+<!-- Teléfono -->
+<div>
+<label class="block font-label-ui text-label-ui text-primary mb-space-2xs">Teléfono *</label>
+<input class="w-full h-11 px-space-sm rounded-lg bg-surface text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary transition-all" placeholder="Ej. 600 000 000" required="" type="tel">
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Correo -->
+<div>
+<label class="block font-label-ui text-label-ui text-primary mb-space-2xs">Correo electrónico *</label>
+<input class="w-full h-11 px-space-sm rounded-lg bg-surface text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary transition-all" placeholder="tuemail@ejemplo.com" required="" type="email">
+</div>
+<!-- Tipo de reforma -->
+<div>
+<label class="block font-label-ui text-label-ui text-primary mb-space-2xs">Tipo de reforma *</label>
+<select class="w-full h-11 px-space-sm rounded-lg bg-surface text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary transition-all" required="">
+<option disabled="" selected="" value="">Selecciona una opción</option>
+<option value="integral">Reforma Integral de Vivienda</option>
+<option value="cocina">Reforma de Cocina</option>
+<option value="bano">Reforma de Baño</option>
+<option value="obra-nueva">Obra Nueva / Chalet</option>
+<option value="comunidad">Comunidad de Propietarios / Fachada</option>
+<option value="otro">Otro proyecto arquitectónico</option>
+</select>
+</div>
+</div>
+<!-- Mensaje -->
+<div>
+<label class="block font-label-ui text-label-ui text-primary mb-space-2xs">Cuéntanos tu proyecto *</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary transition-all" placeholder="Metros cuadrados aproximados, localidad (ej. Illescas, Toledo, Getafe), plazo deseado e ideas clave..." required="" rows="4"></textarea>
+</div>
+<!-- Checkbox RGPD -->
+<div class="flex items-start gap-space-xs">
+<input class="mt-1 h-4 w-4 rounded text-secondary focus:ring-secondary" id="privacy" required="" type="checkbox">
+<label class="font-body-sm text-body-sm text-on-surface-variant select-none" for="privacy">
+                  Acepto la política de privacidad y consiento el tratamiento de mis datos para la elaboración de la propuesta técnica.
+                </label>
+</div>
+<!-- Submit Button -->
+<div>
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs bg-secondary hover:bg-secondary-container hover:text-on-secondary-container text-on-secondary font-label-ui text-label-ui px-space-xl py-space-md rounded-lg shadow-md transition-all font-semibold" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+                  Enviar solicitud de presupuesto
+                </button>
+</div>
+</form>
+</div>
+<!-- Columna Derecha: Tarjeta de Contacto Inmediato -->
+<div class="lg:col-span-5 bg-primary text-on-primary p-space-xl md:p-space-2xl flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-secondary-container uppercase tracking-widest block mb-space-2xs">COMUNICACIÓN ÁGIL</span>
+<h3 class="font-headline-md text-headline-md text-on-primary font-semibold mb-space-sm">¿Prefieres consultarnos al instante?</h3>
+<p class="font-body-md text-body-md text-surface-container-highest mb-space-xl">
+                Llámanos directamente o escríbenos un WhatsApp para una primera orientación técnica con Alfonso Carmona.
+              </p>
+<!-- Quick action links -->
+<div class="space-y-space-md">
+<!-- WhatsApp Button -->
+<a class="flex items-center gap-space-sm p-space-md rounded-xl bg-[#25D366] text-white hover:opacity-95 shadow-md transition-all font-label-ui text-label-ui font-semibold" href="https://wa.me/34925531284" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[24px]">chat</span>
+<span class="">Escríbenos por WhatsApp</span>
+</a>
+<!-- Phone Direct Call -->
+<a class="flex items-center gap-space-sm p-space-md rounded-xl bg-surface-container-lowest/15 hover:bg-surface-container-lowest/25 text-on-primary transition-all font-label-ui text-label-ui" href="tel:+34925531284">
+<span class="material-symbols-outlined text-secondary-fixed text-[24px]">call</span>
+<div>
+<span class="block text-xs uppercase font-label-caps text-surface-dim">Llámanos ahora</span>
+<span class="font-headline-sm text-headline-sm font-bold">+34 925 53 12 84</span>
+</div>
+</a>
+</div>
+</div>
+<!-- Horarios y Datos de Atención -->
+<div class="pt-space-xl mt-space-xl space-y-space-xs text-surface-container-highest font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-sm">schedule</span>
+<span class="">Horario de atención: Lunes a Viernes de 8:00 a 19:00</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-sm">mail</span>
+<span class="">info@alfonsocarmona.es</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-sm">pin_drop</span>
+<span class="">Oficinas centrales en Yuncos, Toledo</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 11. MAPA Y ZONA DE COBERTURA -->
+<section class="w-full py-space-4xl bg-surface-container-low" id="contacto">
+<div class="max-w-[1240px] mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-space-md">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block mb-space-2xs">PROXIMIDAD GEOGRÁFICA</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Mapa y zona de cobertura</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Ubicación estratégica en el eje de la A-42 para dar respuesta rápida en toda La Sagra, Toledo y los municipios del sur madrileño.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-stretch">
+<!-- Embebbed Google Maps Iframe -->
+<div class="lg:col-span-7 rounded-2xl overflow-hidden shadow-lg h-96 lg:h-auto bg-surface-container">
+<iframe allowfullscreen="" class="w-full h-full min-h-[380px] border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Yuncos,+Toledo&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" title="Sede central Obras y Servicios Alfonso Carmona en Yuncos, Toledo"></iframe>
+</div>
+<!-- Coverage Details Panel -->
+<div class="lg:col-span-5 p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="inline-flex items-center gap-space-xs px-space-sm py-space-2xs rounded-full bg-secondary-fixed text-secondary font-label-caps text-label-caps uppercase mb-space-md">
+<span class="material-symbols-outlined text-sm">home_pin</span> Sede Central en Yuncos (Toledo)
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mb-space-sm">
+              Área de actuación inmediata
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg">
+              Nos desplazamos sin ningún cargo de kilometraje para valoraciones técnicas y visitas de replanteo en las siguientes áreas:
+            </p>
+<div class="space-y-space-md">
+<div class="p-space-sm rounded-lg bg-surface">
+<span class="font-label-ui text-label-ui text-primary font-bold block mb-space-2xs flex items-center gap-space-2xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Comarca de La Sagra (Toledo)
+                </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Yuncos, Illescas, Seseña, Ugena, Numancia de la Sagra, Esquivias, Cedillo del Condado, Carranque y Cabañas de la Sagra.
+                </p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface">
+<span class="font-label-ui text-label-ui text-primary font-bold block mb-space-2xs flex items-center gap-space-2xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Toledo Capital y Alrededores
+                </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Casco Histórico, Santa Teresa, Buenavista, Polígono Residencial Santa María de Benquerencia, Olías del Rey y Bargas.
+                </p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface">
+<span class="font-label-ui text-label-ui text-primary font-bold block mb-space-2xs flex items-center gap-space-2xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Sur de Madrid (Comunidad de Madrid)
+                </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Parla, Getafe, Leganés, Fuenlabrada, Pinto, Valdemoro, Alcorcón, Arroyomolinos, Humanes y Griñón.
+                </p>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between font-label-caps text-label-caps text-on-surface-variant">
+<span class="">Visita técnica gratuita</span>
+<span class="text-secondary font-bold">Respuesta en 24h</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 12. FOOTER (HIGH-END ANTHRACITE) -->
+<footer class="w-full bg-primary-container text-on-primary-container pt-space-4xl pb-space-2xl">
+<div class="max-w-[1240px] mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop">
+<!-- Top Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-2xl pb-space-3xl">
+<!-- Brand & Description -->
+<div class="space-y-space-md">
+<img alt="Logo Obras y Servicios Alfonso Carmona" class="h-9 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/AEtjO1WAUy6S3T5Gn1D1FXd6HjhJj6aew8-dDod4sPD9jm8jwnu9-Z1nZwBZ2S2i8i17c9QPEi6_2cVrEZ_ymiLDTXxLWIAJaGQaPnQWmlc0C5A9m8VBjdLBLV3G_vN2xNEo37NAPIIjxLzmRCG1qn0zOeWFebyU-e6LgaYcHH6g58B8ro9-ZalJGkOW7NiXZh4aDFbikhAd0v-so6w2iVe3m3lFswDeYT-s_1T4e81C4oE90tRU0Fl4hi3mPe8">
+<p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">
+            Constructores e interioristas de referencia en Toledo y Madrid Sur desde 1995. Ejecución impecable, rigor contractual y presupuesto cerrado en reformas integrales y obra nueva.
+          </p>
+<div class="flex items-center gap-space-xs text-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider">30 Años de Trayectoria</span>
+</div>
+</div>
+<!-- Links Servicios -->
+<div class="space-y-space-sm">
+<h4 class="font-headline-sm text-headline-sm text-surface-container-lowest font-semibold text-lg">Servicios Especializados</h4>
+<ul class="space-y-space-xs font-body-sm text-body-sm">
+<li class=""><a class="hover:text-surface-container-lowest transition-colors" href="#servicios">Reformas Integrales Llave en Mano</a></li>
+<li class=""><a class="hover:text-surface-container-lowest transition-colors" href="#servicios">Reformas de Cocinas de Diseño</a></li>
+<li class=""><a class="hover:text-surface-container-lowest transition-colors" href="#servicios">Reformas de Baños y Microcemento</a></li>
+<li class=""><a class="hover:text-surface-container-lowest transition-colors" href="#servicios">Construcción de Obra Nueva</a></li>
+<li class=""><a class="hover:text-surface-container-lowest transition-colors" href="#servicios">Rehabilitación de Fachadas SATE</a></li>
+</ul>
+</div>
+<!-- Contacto Detallado -->
+<div class="space-y-space-sm">
+<h4 class="font-headline-sm text-headline-sm text-surface-container-lowest font-semibold text-lg">Contacto Directo</h4>
+<div class="space-y-space-xs font-body-sm text-body-sm">
+<p class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-1">pin_drop</span>
+<span class="">Calle Principal / Polígono Industrial, 45210 Yuncos (Toledo)</span>
+</p>
+<p class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0">call</span>
+<a class="hover:text-surface-container-lowest transition-colors" href="tel:+34925531284">+34 925 53 12 84</a>
+</p>
+<p class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0">mail</span>
+<a class="hover:text-surface-container-lowest transition-colors" href="mailto:info@alfonsocarmona.es">info@alfonsocarmona.es</a>
+</p>
+<p class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0">schedule</span>
+<span class="">Lunes a Viernes: 08:00 - 19:00</span>
+</p>
+</div>
+</div>
+<!-- Redes Sociales y Certificados -->
+<div class="space-y-space-sm">
+<h4 class="font-headline-sm text-headline-sm text-surface-container-lowest font-semibold text-lg">Síguenos en Redes</h4>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+            Descubre semanalmente el progreso en vivo de nuestras obras en curso:
+          </p>
+<div class="flex items-center gap-space-sm">
+<a aria-label="Instagram de Obras y Servicios Alfonso Carmona" class="w-10 h-10 rounded-lg bg-surface-container-lowest/10 hover:bg-secondary hover:text-on-secondary flex items-center justify-center transition-all text-surface-container-lowest" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+</svg>
+</a>
+<a aria-label="Facebook de Obras y Servicios Alfonso Carmona" class="w-10 h-10 rounded-lg bg-surface-container-lowest/10 hover:bg-secondary hover:text-on-secondary flex items-center justify-center transition-all text-surface-container-lowest" href="https://facebook.com" rel="noopener noreferrer" target="_blank">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+<path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.667 5H18V0h-3.808C10.592 0 9 1.583 9 4.615V8z"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<!-- Bottom Bar with Legal and Copyright -->
+<div class="pt-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          © 2025 Obras y Servicios Alfonso Carmona S.L. Todos los derechos reservados.
+        </p>
+<div class="flex flex-wrap items-center gap-space-md font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant">
+<a class="hover:text-surface-container-lowest transition-colors" href="#aviso-legal">Aviso Legal</a>
+<span class="">•</span>
+<a class="hover:text-surface-container-lowest transition-colors" href="#privacidad">Política de Privacidad</a>
+<span class="">•</span>
+<a class="hover:text-surface-container-lowest transition-colors" href="#cookies">Política de Cookies</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Vanilla JS Interactive Handlers (FAQ Accordion, Gallery Filters & Slider) -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. FAQ Accordion Toggle
+      const faqToggles = document.querySelectorAll('.faq-toggle');
+      faqToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          const content = toggle.nextElementSibling;
+          const icon = toggle.querySelector('.faq-icon');
+          const isOpen = !content.classList.contains('hidden');
+
+          // Close all other items
+          document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+          document.querySelectorAll('.faq-icon').forEach(i => i.style.transform = 'rotate(0deg)');
+
+          if (!isOpen) {
+            content.classList.remove('hidden');
+            if (icon) icon.style.transform = 'rotate(180deg)';
+          }
+        });
+      });
+
+      // 2. Gallery Filter Tabs
+      const filterButtons = document.querySelectorAll('#gallery-filters .gallery-tab');
+      const projectCards = document.querySelectorAll('#gallery-container .project-card');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterButtons.forEach(b => {
+            b.classList.remove('active', 'bg-primary', 'text-on-primary');
+            b.classList.add('bg-surface-container-high', 'text-on-surface');
+          });
+
+          btn.classList.add('active', 'bg-primary', 'text-on-primary');
+          btn.classList.remove('bg-surface-container-high', 'text-on-surface');
+
+          const filter = btn.getAttribute('data-filter');
+
+          projectCards.forEach(card => {
+            const categories = card.getAttribute('data-category') || '';
+            if (filter === 'all' || categories.includes(filter)) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // 3. Before/After Interactive Mouse/Touch Slider
+      const sliderContainers = document.querySelectorAll('.before-after-container');
+      sliderContainers.forEach(container => {
+        const overlay = container.querySelector('.before-overlay');
+        const handle = container.querySelector('.divider-handle');
+        let isDown = false;
+
+        const updatePosition = (clientX) => {
+          const rect = container.getBoundingClientRect();
+          let x = clientX - rect.left;
+          if (x < 0) x = 0;
+          if (x > rect.width) x = rect.width;
+          const percentage = (x / rect.width) * 100;
+          if (overlay) overlay.style.width = percentage + '%';
+          if (handle) handle.style.left = percentage + '%';
+        };
+
+        container.addEventListener('mousedown', (e) => { isDown = true; updatePosition(e.clientX); });
+        window.addEventListener('mouseup', () => { isDown = false; });
+        container.addEventListener('mousemove', (e) => { if (isDown) updatePosition(e.clientX); });
+
+        container.addEventListener('touchstart', (e) => { isDown = true; updatePosition(e.touches[0].clientX); });
+        window.addEventListener('touchend', () => { isDown = false; });
+        container.addEventListener('touchmove', (e) => { if (isDown) updatePosition(e.touches[0].clientX); });
+      });
+    });
+  </script>
+</div></main><footer class="w-full bg-primary-container text-on-primary-container py-space-3xl"><div class="max-w-[1240px] mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-2xl pb-space-2xl"><div class="space-y-space-md"><div class="flex items-center gap-space-xs"><img alt="Logo Obras y Servicios Alfonso Carmona" class="h-8 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/AEtjO1WAUy6S3T5Gn1D1FXd6HjhJj6aew8-dDod4sPD9jm8jwnu9-Z1nZwBZ2S2i8i17c9QPEi6_2cVrEZ_ymiLDTXxLWIAJaGQaPnQWmlc0C5A9m8VBjdLBLV3G_vN2xNEo37NAPIIjxLzmRCG1qn0zOeWFebyU-e6LgaYcHH6g58B8ro9-ZalJGkOW7NiXZh4aDFbikhAd0v-so6w2iVe3m3lFswDeYT-s_1T4e81C4oE90tRU0Fl4hi3mPe8"><span class="font-headline-sm text-headline-sm text-surface-container-lowest font-semibold">Alfonso Carmona</span></div><p class="font-body-sm text-body-sm text-on-primary-container max-w-sm">Especialistas en reformas integrales, rehabilitación arquitectónica y construcción de alta gama. Más de 28 años de rigor técnico en Toledo y Madrid Sur.</p><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-caps text-label-caps uppercase tracking-widest text-surface-container-highest">Desde 1995 · Calidad Garantizada</span></div></div><div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm text-surface-container-lowest font-medium">Servicios</h4><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="hover:text-surface-container-lowest transition-colors">Reformas Integrales de Viviendas</li><li class="hover:text-surface-container-lowest transition-colors">Cocinas y Baños de Diseño</li><li class="hover:text-surface-container-lowest transition-colors">Rehabilitación Energética y Fachadas</li><li class="hover:text-surface-container-lowest transition-colors">Locales Comerciales y Oficinas</li><li class="hover:text-surface-container-lowest transition-colors">Construcción de Obra Nueva</li></ul></div><div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm text-surface-container-lowest font-medium">Cobertura</h4><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="">Toledo Capital y Comarca de La Sagra</li><li class="">Illescas, Yuncos, Seseña y Olías</li><li class="">Madrid Sur: Getafe, Leganés, Parla, Pinto</li><li class="">Valdemoro y Arroyomolinos</li></ul></div><div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm text-surface-container-lowest font-medium">Contacto Inmediato</h4><div class="space-y-space-xs font-body-sm text-body-sm"><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">location_on</span>Toledo &amp; Madrid Sur, España</p><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">call</span>+34 925 53 12 84</p><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">smartphone</span>+34 600 000 000</p><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">mail</span>info@alfonsocarmona.es</p></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2025 Obras y Servicios Alfonso Carmona S.L. Todos los derechos reservados.</p><div class="flex items-center gap-space-lg font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant"><span class="hover:text-surface-container-lowest cursor-pointer transition-colors">Aviso Legal</span><span class="hover:text-surface-container-lowest cursor-pointer transition-colors">Política de Privacidad</span><span class="hover:text-surface-container-lowest cursor-pointer transition-colors">Cookies</span></div></div></div></footer>
+
+</body></html>
