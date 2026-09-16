@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Logo Reformas Garrido">
+  <mask id="rg-house-mask">
+    <rect x="0" y="0" width="64" height="64" fill="#ffffff"/>
+    <path d="M32 12 L48 26 L48 48 L16 48 L16 26 Z" fill="#000000"/>
+    <rect x="27.5" y="33.5" width="9" height="9" rx="1.5" fill="#ffffff"/>
+  </mask>
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="#9d431f" mask="url(#rg-house-mask)"/>
+</svg>
