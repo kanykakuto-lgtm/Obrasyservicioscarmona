@@ -1,32 +1,51 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Logo Reformas Garrido">
   <defs>
     <linearGradient id="rg-badge-grad" x1="4" y1="4" x2="60" y2="60" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#2a3444"/>
-      <stop offset="1" stop-color="#0d1119"/>
+      <stop offset="0" stop-color="#e07a2e"/>
+      <stop offset="0.5" stop-color="#c2571f"/>
+      <stop offset="1" stop-color="#7e2c08"/>
     </linearGradient>
-    <linearGradient id="rg-house-grad" x1="10" y1="12" x2="54" y2="50" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#f2b355"/>
-      <stop offset="1" stop-color="#d38f2c"/>
-    </linearGradient>
-    <clipPath id="rg-badge-clip2">
+    <clipPath id="rg-badge-clip3">
       <path d="M18 4 H46 A14 14 0 0 1 60 18 V46 A14 14 0 0 1 46 60 H18 A14 14 0 0 1 4 46 V18 A14 14 0 0 1 18 4 Z"/>
     </clipPath>
   </defs>
 
-  <!-- Badge background: deep charcoal/navy -->
+  <style>
+    .rg-shine { animation: rg-shine-move 4.5s ease-in-out infinite; }
+    @keyframes rg-shine-move {
+      0%   { transform: translateX(-70px) rotate(-28deg); opacity: 0; }
+      8%   { opacity: 0.5; }
+      22%  { opacity: 0.5; }
+      34%  { transform: translateX(70px) rotate(-28deg); opacity: 0; }
+      100% { transform: translateX(70px) rotate(-28deg); opacity: 0; }
+    }
+    .rg-window { animation: rg-glow 2.4s ease-in-out infinite; transform-origin: 32px 33px; }
+    @keyframes rg-glow {
+      0%, 100% { opacity: 0.8; transform: scale(1); }
+      50%      { opacity: 1; transform: scale(1.15); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .rg-shine, .rg-window { animation: none; }
+    }
+  </style>
+
+  <!-- Badge background -->
   <path d="M18 4 H46 A14 14 0 0 1 60 18 V46 A14 14 0 0 1 46 60 H18 A14 14 0 0 1 4 46 V18 A14 14 0 0 1 18 4 Z" fill="url(#rg-badge-grad)"/>
 
-  <g clip-path="url(#rg-badge-clip2)">
-    <!-- Subtle diagonal energy accent -->
-    <rect x="-14" y="6" width="92" height="10" rx="5" fill="#ffffff" opacity="0.06" transform="rotate(-32 32 32)"/>
-    <rect x="-14" y="46" width="92" height="6" rx="3" fill="#ffffff" opacity="0.05" transform="rotate(-32 32 32)"/>
+  <g clip-path="url(#rg-badge-clip3)">
+    <!-- Animated diagonal shine sweep -->
+    <rect class="rg-shine" x="-6" y="-10" width="14" height="90" fill="#ffffff" opacity="0"/>
 
-    <!-- House-shaped plaque (roof + walls) in gold, fused with the RG monogram -->
-    <path d="M32 8 L54 24 L54 56 H10 V24 Z" fill="url(#rg-house-grad)"/>
-    <!-- Roofline edge accent -->
-    <path d="M32 8 L54 24 L50 26.5 L32 13.5 L14 26.5 L10 24 Z" fill="#7a4e14" opacity="0.55"/>
+    <!-- Modern single-slope house silhouette (fused with the RG monogram) -->
+    <path d="M15 49 L15 27 L34 14 L49 21.5 L49 49 Z" fill="#fff6ee"/>
+
+    <!-- Roofline accent -->
+    <path d="M15 27 L34 14 L49 21.5 L49 25.5 L34 18 L15 31 Z" fill="#c2571f" opacity="0.18"/>
+
+    <!-- Glowing gable-window accent, tucked under the roofline -->
+    <rect class="rg-window" x="28.5" y="29" width="7" height="7" rx="1.5" fill="#ffb347"/>
 
     <!-- RG monogram fused into the house body -->
-    <text x="32" y="47" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-weight="800" font-size="21" letter-spacing="-0.8" fill="#171c26">RG</text>
+    <text x="32" y="46" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-weight="800" font-size="16" letter-spacing="-0.5" fill="#a8431b">RG</text>
   </g>
 </svg>
