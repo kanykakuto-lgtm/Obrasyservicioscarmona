@@ -117,7 +117,7 @@
             </p>
 </div>
 <div class="relative z-10 flex items-center justify-between pt-space-md mt-space-md">
-<a class="font-label-ui text-label-ui text-secondary flex items-center gap-space-2xs group-hover:gap-space-xs transition-all" href="#servicio-integrales">
+<a class="font-label-ui text-label-ui text-secondary flex items-center gap-space-2xs group-hover:gap-space-xs transition-all service-detail-link" href="#servicio-integrales" data-target="servicio-integrales">
               Ver detalles de reforma <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
 </a>
 <span class="font-label-caps text-label-caps text-on-surface-variant">Llave en Mano</span>
@@ -136,7 +136,7 @@
               Edificación desde cimientos, diseño bioclimático, estructuras de hormigón y acero, y máxima eficiencia energética clase A con aerotermia y suelo radiante.
             </p>
 </div>
-<a class="font-label-ui text-label-ui text-secondary flex items-center gap-space-2xs group-hover:gap-space-xs transition-all" href="#servicio-obra-nueva">
+<a class="font-label-ui text-label-ui text-secondary flex items-center gap-space-2xs group-hover:gap-space-xs transition-all service-detail-link" href="#servicio-obra-nueva" data-target="servicio-obra-nueva">
             Consultar edificación <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
 </a>
 </div>
@@ -152,7 +152,7 @@
               Cocinas abiertas concebidas como el corazón del hogar. Islas esculturales en porcelánico o cuarzo, mobiliario a medida de roble natural y extracción perimetral invisible.
             </p>
 </div>
-<a class="font-label-ui text-label-ui text-secondary flex items-center gap-space-2xs group-hover:gap-space-xs transition-all" href="#servicio-cocinas">
+<a class="font-label-ui text-label-ui text-secondary flex items-center gap-space-2xs group-hover:gap-space-xs transition-all service-detail-link" href="#servicio-cocinas" data-target="servicio-cocinas">
             Diseñar mi cocina <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
 </a>
 </div>
@@ -168,7 +168,7 @@
               Sustitución de bañera por platos de resina a ras de suelo, griferías empotradas en negro mate o bronce, hornacinas retroiluminadas y revestimientos continuos en microcemento.
             </p>
 </div>
-<a class="font-label-ui text-label-ui text-secondary flex items-center gap-space-2xs group-hover:gap-space-xs transition-all" href="#servicio-banos">
+<a class="font-label-ui text-label-ui text-secondary flex items-center gap-space-2xs group-hover:gap-space-xs transition-all service-detail-link" href="#servicio-banos" data-target="servicio-banos">
             Renovar baño <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
 </a>
 </div>
@@ -184,7 +184,7 @@
               Rehabilitación térmica de fachadas mediante sistema SATE, impermeabilización de cubiertas, bajantes, rampas de accesibilidad universal y modernización de portales vecinales.
             </p>
 </div>
-<a class="font-label-ui text-label-ui text-secondary flex items-center gap-space-2xs group-hover:gap-space-xs transition-all" href="#servicio-comunidades">
+<a class="font-label-ui text-label-ui text-secondary flex items-center gap-space-2xs group-hover:gap-space-xs transition-all service-detail-link" href="#servicio-comunidades" data-target="servicio-comunidades">
             Presupuesto comunitario <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
 </a>
 </div>
@@ -192,18 +192,18 @@
 </div>
 </section>
 <!-- 4.5 DETALLE DE SERVICIOS -->
-<section class="w-full py-space-4xl bg-surface-container-low" id="detalle-servicios">
+<section class="w-full py-space-4xl bg-surface-container-low hidden" id="detalle-servicios">
 <div class="max-w-[1240px] mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop space-y-space-3xl">
 
 <!-- Service Detail 1: Reformas integrales llave en mano -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center scroll-mt-24" id="servicio-integrales">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center scroll-mt-24 service-detail-panel" id="servicio-integrales">
 <div class="lg:col-span-5 ">
 <div class="rounded-xl overflow-hidden shadow-xl aspect-[4/5]">
 <img class="w-full h-full object-cover" alt="Salón de planta abierta reformado con suelo de parqué y grandes ventanales" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr6b-bMaQhTyVr8Lqh-m-29cg09C9bny4jZHvje0UKLNtyIiORzWhadzX8lU6GICgGwObq3TS9d7QiRaTZGhKNB44qhLBZfNartUEEfQ889pQPRW1_v7XDlxJiSJ46KSVQEk0_w0Omg9rKZG45fyT6YXrKBp4WRI_wBpl9_zugw9sbGVzU44fMecPYi70FSulVv-LrUunMTnAaRYJl5-D6eZWf1EMjMy1hF5k5o-YxtKqP8wjm1J-VKg">
 </div>
 </div>
 <div class="lg:col-span-7 space-y-space-md">
-<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block">SERVICIO INTEGRAL · LLAVE EN MANO</span>
+<div class="flex items-center justify-between gap-space-sm"><span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block">SERVICIO INTEGRAL · LLAVE EN MANO</span><button aria-label="Cerrar detalle de servicio" class="service-detail-close inline-flex items-center justify-center w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-colors shrink-0"><span class="material-symbols-outlined text-[18px]">close</span></button></div>
 <h3 class="font-headline-lg text-headline-lg text-primary tracking-tight">Reformas integrales llave en mano</h3>
 <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Renovación total de pisos, unifamiliares y chalets con un único interlocutor de principio a fin: gestionamos licencias, demolición, instalaciones y acabados sin subcontratas anónimas.</p>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-sm">
@@ -244,14 +244,14 @@ Solicitar presupuesto de reforma integral <span class="material-symbols-outlined
 </div>
 </div>
 <!-- Service Detail 2: Construcción de obra nueva -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center scroll-mt-24 pt-space-3xl" id="servicio-obra-nueva">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center scroll-mt-24 pt-space-3xl service-detail-panel" id="servicio-obra-nueva">
 <div class="lg:col-span-5 lg:order-last">
 <div class="rounded-xl overflow-hidden shadow-xl aspect-[4/5]">
 <img class="w-full h-full object-cover" alt="Villa unifamiliar de nueva construcción con piscina y porche en Toledo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC03TN5cJ1hfN2fc1qzBgAs1CPzstEchTbTBPeYdFSHbBeCBE39u54ElFBELE0JK2ueMpykyDkIei2u-9RPWpD0YZO063gu3BrHVZyRbA4Dgmf96ix2v_4jJ8q-prSX1AOgEY70PKEqGAucuAE7kzCy-xv0au4nKVIiTXQgxtU_yTv-OILO-FchvFZqQJnXPDfOuReFgHm1SvxQXsYAP_2w_gbZPGCBdsLNGv0-PeRFiwyC1YQCnn8zFA">
 </div>
 </div>
 <div class="lg:col-span-7 space-y-space-md">
-<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block">CONSTRUCCIÓN · DESDE CIMIENTOS</span>
+<div class="flex items-center justify-between gap-space-sm"><span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block">CONSTRUCCIÓN · DESDE CIMIENTOS</span><button aria-label="Cerrar detalle de servicio" class="service-detail-close inline-flex items-center justify-center w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-colors shrink-0"><span class="material-symbols-outlined text-[18px]">close</span></button></div>
 <h3 class="font-headline-lg text-headline-lg text-primary tracking-tight">Construcción de obra nueva</h3>
 <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Edificación desde cimientos con diseño bioclimático, estructuras de hormigón y acero, y máxima eficiencia energética para viviendas unifamiliares y chalets.</p>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-sm">
@@ -292,14 +292,14 @@ Consultar mi proyecto de obra nueva <span class="material-symbols-outlined text-
 </div>
 </div>
 <!-- Service Detail 3: Cocinas de diseño a medida -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center scroll-mt-24 pt-space-3xl" id="servicio-cocinas">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center scroll-mt-24 pt-space-3xl service-detail-panel" id="servicio-cocinas">
 <div class="lg:col-span-5 ">
 <div class="rounded-xl overflow-hidden shadow-xl aspect-[4/5]">
 <img class="w-full h-full object-cover" alt="Cocina de diseño reformada con isla central de roble y encimera de porcelánico" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBE5pFTecFYPBWNTTvkdlvbins0BelKp8FTE5VnVKsiCdis2Bon1e-es7YcYd6d198SjhGujDKA5k23J2hfmGqZecIhqLdsViVyzNSJ79l1vASR4QQbjjoDOegpVnoUiF4bRgVT-7fyNpl8ORQdXZgbONh19jxbW747pw4PUFm0jwDrDPx0rGkautTLxhSTeT7sEGG7ZPkMzZxzsuoyPr6DXVWBvY-OeTk1HG39thBgfuEMdv4se2ixNw">
 </div>
 </div>
 <div class="lg:col-span-7 space-y-space-md">
-<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block">ESPACIOS CLAVE · COCINAS</span>
+<div class="flex items-center justify-between gap-space-sm"><span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block">ESPACIOS CLAVE · COCINAS</span><button aria-label="Cerrar detalle de servicio" class="service-detail-close inline-flex items-center justify-center w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-colors shrink-0"><span class="material-symbols-outlined text-[18px]">close</span></button></div>
 <h3 class="font-headline-lg text-headline-lg text-primary tracking-tight">Cocinas de diseño a medida</h3>
 <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Cocinas abiertas concebidas como el corazón del hogar, con islas esculturales, mobiliario a medida y extracción perimetral invisible.</p>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-sm">
@@ -340,14 +340,14 @@ Diseñar mi cocina <span class="material-symbols-outlined text-[18px]">arrow_for
 </div>
 </div>
 <!-- Service Detail 4: Baños de vanguardia -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center scroll-mt-24 pt-space-3xl" id="servicio-banos">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center scroll-mt-24 pt-space-3xl service-detail-panel" id="servicio-banos">
 <div class="lg:col-span-5 lg:order-last">
 <div class="rounded-xl overflow-hidden shadow-xl aspect-[4/5]">
 <img class="w-full h-full object-cover" alt="Baño de diseño reformado con microcemento, ducha a ras de suelo y bañera exenta" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5Iv6TEim478OTzrwahssgx5xNrwkEIFtMQNVdHAmmYsBtpT6z0NUJ5m4BD2mk8GCjZsfp8ljfaLdqvAGc1AQC6QLcqbDKwz6D6ymD_PNIjjQ9yT35zGebFHU9IiIpy0lJiYRawUwtpSB4Y5JgM29TkALGAkonwEsxv5fahs7c5uplOwy-NUuHDKGo9O9s8lLiypnE2BE8DYsndEbm5QmBpowqqGXTO6JHfJTb7tfNKoRu5JshJn97ig">
 </div>
 </div>
 <div class="lg:col-span-7 space-y-space-md">
-<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block">BIENESTAR · BAÑOS</span>
+<div class="flex items-center justify-between gap-space-sm"><span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block">BIENESTAR · BAÑOS</span><button aria-label="Cerrar detalle de servicio" class="service-detail-close inline-flex items-center justify-center w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-colors shrink-0"><span class="material-symbols-outlined text-[18px]">close</span></button></div>
 <h3 class="font-headline-lg text-headline-lg text-primary tracking-tight">Baños de vanguardia</h3>
 <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Baños pensados como un espacio de bienestar: platos de ducha a ras de suelo, grifería empotrada y revestimientos continuos en microcemento.</p>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-sm">
@@ -388,14 +388,14 @@ Renovar mi baño <span class="material-symbols-outlined text-[18px]">arrow_forwa
 </div>
 </div>
 <!-- Service Detail 5: Rehabilitación de comunidades y fachadas -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center scroll-mt-24 pt-space-3xl" id="servicio-comunidades">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center scroll-mt-24 pt-space-3xl service-detail-panel" id="servicio-comunidades">
 <div class="lg:col-span-5 ">
 <div class="rounded-xl overflow-hidden shadow-xl aspect-[4/5]">
 <img class="w-full h-full object-cover" alt="Fachada de edificio de viviendas rehabilitada con sistema de aislamiento térmico SATE" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY_ExeFRcjF_KJnal7eVr1Kum4ykds_3VonYbZcz-nJD91-wO-0bqnyIYf21q4eMYM-vV9IK1hAlKuSthkob97Lptc70HLTIUPu_CPiPsNAnVio79QSXS6u5-o4wUppjErZ3C6elTaSTEraD5GEzvyFMrtKutX-7mm6S76WFe-fk-Jk3k7i_2EqgVEeXyRx9_J_rRzDFvrc_Ui64SWuHEEUXv8Pkdwlx7TNaiadAqrL0Jw1PXy_Aje6Q">
 </div>
 </div>
 <div class="lg:col-span-7 space-y-space-md">
-<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block">EDIFICACIÓN COLECTIVA · COMUNIDADES</span>
+<div class="flex items-center justify-between gap-space-sm"><span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block">EDIFICACIÓN COLECTIVA · COMUNIDADES</span><button aria-label="Cerrar detalle de servicio" class="service-detail-close inline-flex items-center justify-center w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-colors shrink-0"><span class="material-symbols-outlined text-[18px]">close</span></button></div>
 <h3 class="font-headline-lg text-headline-lg text-primary tracking-tight">Rehabilitación de comunidades y fachadas</h3>
 <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Rehabilitación térmica de fachadas mediante sistema SATE, impermeabilización de cubiertas y modernización integral de portales vecinales.</p>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-sm">
@@ -1197,6 +1197,36 @@ Pedir presupuesto comunitario <span class="material-symbols-outlined text-[18px]
         container.addEventListener('touchstart', (e) => { isDown = true; updatePosition(e.touches[0].clientX); });
         window.addEventListener('touchend', () => { isDown = false; });
         container.addEventListener('touchmove', (e) => { if (isDown) updatePosition(e.touches[0].clientX); });
+      });
+
+      // 4. Service Detail Panels: hidden by default, shown only when a service card is clicked
+      const serviceDetailSection = document.getElementById('detalle-servicios');
+      const servicePanels = document.querySelectorAll('.service-detail-panel');
+      const serviceLinks = document.querySelectorAll('.service-detail-link');
+
+      const closeServiceDetails = () => {
+        if (serviceDetailSection) serviceDetailSection.classList.add('hidden');
+        servicePanels.forEach(panel => panel.classList.add('hidden'));
+      };
+
+      serviceLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = link.getAttribute('data-target');
+          const target = document.getElementById(targetId);
+          if (!target || !serviceDetailSection) return;
+
+          servicePanels.forEach(panel => panel.classList.toggle('hidden', panel.id !== targetId));
+          serviceDetailSection.classList.remove('hidden');
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      });
+
+      document.querySelectorAll('.service-detail-close').forEach(btn => {
+        btn.addEventListener('click', () => {
+          closeServiceDetails();
+          document.getElementById('servicios')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
       });
     });
   </script>
