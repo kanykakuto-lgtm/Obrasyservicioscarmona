@@ -1,33 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Logo Reformas Garrido">
   <defs>
-    <linearGradient id="rg-grad" x1="4" y1="4" x2="60" y2="60" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#d4631f"/>
-      <stop offset="0.55" stop-color="#9d431f"/>
-      <stop offset="1" stop-color="#5c2712"/>
+    <linearGradient id="rg-badge-grad" x1="4" y1="4" x2="60" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2a3444"/>
+      <stop offset="1" stop-color="#0d1119"/>
     </linearGradient>
-    <clipPath id="rg-badge-clip">
+    <linearGradient id="rg-house-grad" x1="10" y1="12" x2="54" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f2b355"/>
+      <stop offset="1" stop-color="#d38f2c"/>
+    </linearGradient>
+    <clipPath id="rg-badge-clip2">
       <path d="M18 4 H46 A14 14 0 0 1 60 18 V46 A14 14 0 0 1 46 60 H18 A14 14 0 0 1 4 46 V18 A14 14 0 0 1 18 4 Z"/>
     </clipPath>
   </defs>
 
-  <!-- Badge background -->
-  <path d="M18 4 H46 A14 14 0 0 1 60 18 V46 A14 14 0 0 1 46 60 H18 A14 14 0 0 1 4 46 V18 A14 14 0 0 1 18 4 Z" fill="url(#rg-grad)"/>
+  <!-- Badge background: deep charcoal/navy -->
+  <path d="M18 4 H46 A14 14 0 0 1 60 18 V46 A14 14 0 0 1 46 60 H18 A14 14 0 0 1 4 46 V18 A14 14 0 0 1 18 4 Z" fill="url(#rg-badge-grad)"/>
 
-  <g clip-path="url(#rg-badge-clip)">
-    <!-- Dynamic diagonal accent sweeping behind the house -->
-    <rect x="-14" y="8" width="92" height="12" rx="6" fill="#ffffff" opacity="0.14" transform="rotate(-32 32 32)"/>
-    <rect x="-14" y="44" width="92" height="7" rx="3.5" fill="#ffffff" opacity="0.10" transform="rotate(-32 32 32)"/>
+  <g clip-path="url(#rg-badge-clip2)">
+    <!-- Subtle diagonal energy accent -->
+    <rect x="-14" y="6" width="92" height="10" rx="5" fill="#ffffff" opacity="0.06" transform="rotate(-32 32 32)"/>
+    <rect x="-14" y="46" width="92" height="6" rx="3" fill="#ffffff" opacity="0.05" transform="rotate(-32 32 32)"/>
 
-    <!-- Modern single-slope house silhouette -->
-    <path d="M15 49 L15 27 L34 14 L49 21.5 L49 49 Z" fill="#ffffff"/>
+    <!-- House-shaped plaque (roof + walls) in gold, fused with the RG monogram -->
+    <path d="M32 8 L54 24 L54 56 H10 V24 Z" fill="url(#rg-house-grad)"/>
+    <!-- Roofline edge accent -->
+    <path d="M32 8 L54 24 L50 26.5 L32 13.5 L14 26.5 L10 24 Z" fill="#7a4e14" opacity="0.55"/>
 
-    <!-- Roofline accent -->
-    <path d="M15 27 L34 14 L49 21.5 L49 25.5 L34 18 L15 31 Z" fill="#5c2712" opacity="0.85"/>
-
-    <!-- Door, cut through to badge gradient -->
-    <rect x="30" y="35" width="10" height="14" rx="2" fill="url(#rg-grad)"/>
-
-    <!-- Window accent -->
-    <rect x="19" y="33" width="8" height="8" rx="1.5" fill="#f2a65a"/>
+    <!-- RG monogram fused into the house body -->
+    <text x="32" y="47" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-weight="800" font-size="21" letter-spacing="-0.8" fill="#171c26">RG</text>
   </g>
 </svg>
